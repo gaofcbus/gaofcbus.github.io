@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="responsive, template, portfolio, html, css, javascript, Theme" />
+    <meta name="author" content="">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+    <title>Mix - App Landing Page</title>
+    <link rel="icon" href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/padding.margin.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+    <header class="pixinav responsive-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="brand-logo">
+                        <a href="index.html"><img src="images/logo.png" alt="logo-img"></a>
+                    </div>
+                    <div class="nav-icon"></div>
+                    <div class="nav-wrapper">
+                        <ul>
+                            <li class="active" id='list'><a href="#" class="anchor" id="jxq">618G解析</a>
+                                <ul class="dropdown" >
+                                    <li><a onclick="changeJxq(this)" href="#input">618G解析</a></li>
+                                    <li><a onclick="changeJxq(this)" href="#input">VIP解析</a></li>
+                                    <li><a onclick="changeJxq(this)" href="#input">视频解析</a></li>
+                                    <li><a onclick="changeJxq(this)" href="#input">vip视频解析</a></li>
+                                    <li><a onclick="changeJxq(this)" href="#input">无名小站</a></li>
+                                    <li><a onclick="changeJxq(this)" href="#input">UU影视</a></li>
+                                    <li><a onclick="changeJxq(this)" href="#input">那片云解析</a></li>
+                                    <li><a onclick="changeJxq(this)" href="#input">穷二代视频</a></li>
+                                    <li><a onclick="changeJxq(this)" href="#input">石头云</a></li>
+                                    <li><a onclick="changeJxq(this)" href="#input">人人解析</a></li>
+                                    <li><a onclick="changeJxq(this)" href="#input">wlzhan解析</a></li>
+                                    <li><a onclick="changeJxq(this)" href="#input">金桥解析</a></li>
+                                    <li><a onclick="changeJxq(this)" href="#input">Lequgirl</a></li>
+                                    <li><a onclick="changeJxq(this)" href="#input">通用视频</a></li>
+                                    <li><a onclick="changeJxq(this)" href="#input">爱看TV</a></li>
+                                    <li><a onclick="changeJxq(this)" href="#input">百域阁</a></li>
+                                    <li><a onclick="changeJxq(this)" href="#input">会员K云</a></li>
+                                    <li><a onclick="changeJxq(this)" href="#input">高端解析</a></li>
+                                    <li><a onclick="changeJxq(this)" href="#input">寒曦朦</a></li>
+                                    <li><a onclick="changeJxq(this)" href="#input">鑫梦解析</a></li>
+                                    <li><a onclick="changeJxq(this)" href="#input">OK视频</a></li>
+                                </ul>
+                            </li>
+                            <li class="active" id='list'><a href="#" class="anchor" id="jxq">支持一下</a>
+                                <ul class="dropdown" >
+                                    <li><img src="images/q.png"></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="hero_section">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="hero_content text-center">
+                        <h2 class="pb_50" id="t">支持腾讯视频，优酷，爱奇艺，PPTV，搜狐，芒果，乐视等VIP视频解析</h2>
+
+                        <ul class="price_check pt_25" >
+                            <li><i class="fa fa-angle-right"></i> 如果解析失败请点击右上角更换解析器。仅供学习使用，严禁用于商业、非法用途。</li>
+                        </ul>
+
+
+                        <div class="row col-md-14" style="padding-top: 80px;">
+                            <ul class="social_contact text-center d_inline">
+                                <li><a target='_blank' href="http://www.youku.com/"><img src="images/youku.png"></a></li>
+                                <li><a target='_blank' href="https://v.qq.com/"><img src="images/qq.png"></a></li>
+                                <li><a target='_blank' href="http://www.iqiyi.com/"><img src="images/iqiyi.png"></a></li>
+                                <li><a target='_blank' href="http://www.mgtv.com"><img src="images/mangguo.png"></a></li>
+                                <li><a target='_blank' href="http://tv.sohu.com/"><img src="images/sohu.png"></a></li>
+                                <li><a target='_blank' href="http://www.le.com/"><img src="images/leshi.png"></a></li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="newsletter bg-gray">
+      <div class="container text-center">
+        <div class="form-holder">
+          
+            <div class="form-group">
+              <input name="url" placeholder="请输入视频链接" id='input'>
+              <button onclick="sub()" class="btn btn-primary btn-gradient submit" >解析</button>
+            </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="footer_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-14">
+                    <p class="copyright text-center">&copy; Copyright 2019-2021<br/>All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="scroll_top not_visible"><i class="fa fa-angle-up"></i></div>
+
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <script type="text/javascript">
+        
+        function changeJxq(e)
+        {
+            $('#jxq').html(e.innerHTML);
+            $('#input').attr('placeholder', '请输入视频链接，正在使用 “' + e.innerHTML + '” 进行解析');
+        }
+
+        function sub() 
+        {
+            
+            var jxq = $('#jxq').html();
+            var url = '';
+            switch(jxq) {
+                case '618G解析':
+                    url = "https://jx.618g.com/?url=";
+                    break;
+                case 'VIP解析':
+                    url = "https://jx.dy-jx.com/?url=";
+                    break;
+                case '视频解析':
+                        url = "http://jx.598110.com/?url=";
+                    break;
+                case 'vip视频解析':
+                    url = "http://api.sumingys.com/index.php?url=";
+                    break;
+                case '无名小站':
+                    url = "http://www.82190555.com/video.php?url=";
+                    break;
+                case 'UU影视':
+                    url = "http://api.uuyingshi.com/?url=";
+                    break;
+                case '那片云解析':
+                    url = "http://api.nepian.com/ckparse/?url=";
+                    break;
+                case '穷二代视频':
+                    url = "http://jx.ejiafarm.com/dy.php?url=";
+                    break;
+                case '石头云':
+                    url = "http://jiexi.071811.cc/jx.php?url=";
+                    break;
+                case '人人解析':
+                    url = "https://vip.mpos.ren/v/?url=";
+                    break;
+                case 'wlzhan解析':
+                    url = "http://api.wlzhan.com/sudu/?url=";
+                    break;
+                case '金桥解析':
+                    url = "http://jqaaa.com/jx.php?url=";
+                    break;
+                case 'Lequgirl':
+                    url = "http://api.lequgirl.com/?url=";
+                    break;
+                case '通用视频':
+                    url = "http://jx.598110.com/index.php?url=";
+                    break;
+                case '爱看TV':
+                    url = "http://aikan-tv.com/?url=";
+                    break;
+                case '百域阁':
+                    url = "http://app.baiyug.cn:2019/vip/index.php?url=";
+                    break;
+                case '会员K云':
+                    url = "http://17kyun.com/api.php?url=";
+                    break;
+                case '高端解析':
+                    url = "http://api.hlglwl.com/jx.php?url=";
+                    break;
+                case '寒曦朦':
+                    url = "http://jx.hanximeng.com/api.php?url=";
+                    break;
+                case '鑫梦解析':
+                    url = "http://api.52xmw.com/?url=";
+                    break;
+                case 'OK视频':
+                    url = "http://okjx.cc/?url=";
+                default:
+                    url = "http://api.bbbbbb.me/jx/?url=";
+            }
+            url += $('#input').val();
+            console.log(url);
+            window.open(url, "");
+        }
+
+
+    </script>
+
+</body>
+
+</html>
